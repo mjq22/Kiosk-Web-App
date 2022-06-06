@@ -1,0 +1,55 @@
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Kiosk CVS</title>
+    <style type="text/css">
+        #wrapper {
+            opacity: 0;
+            top: 6%;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/dist/css/keyboard.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/dist/css/style.css" type="text/css" media="all">
+</head>
+
+<body>
+    <div id="wrapper" class="login">
+        <main id="main">
+            <div class="logo"><a href="#"><img src="assets/images/logo.png" alt="Site logo"></a></div>
+            <form action="" class="login-form">
+                <h2>Sign in</h2>
+                <div class="field">
+                    <label for="username">Login ID<span>*</span></label>
+                    <input type="text" name="username" data-field="Login ID" class="required" autocomplete="off"
+                        id="username">
+                    <span class="err-txt"></span>
+                </div>
+                <div class="field">
+                    <label for="password">Pin<span>*</span></label>
+                    <input type="password" name="password" data-field="Pin" class="required" autocomplete="off"
+                        id="password">
+                    <span class="err-txt"></span>
+                </div>
+                <div class="field">
+                    <div class="checkbox">
+                        <input type="checkbox" data-field="" name="remember" id="remember">
+                        <label for="remember"><span>Remember Me</span></label>
+                    </div>
+                    <span class="err-txt"></span>
+                </div>
+                <a href="index.html" class="submit-cap btn btn-primary">Log in</a>
+            </form>
+        </main>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://bsdk.api.ditto.com/ditto/3.3.0/en-us/api.js"> </script>
+    <link type="text/javascript" rel="prefetch" href="https://bsdk.api.ditto.com/ditto/3.3.0/en-us/vendors.js">
+    <script type="text/javascript" src="https://cdn.rawgit.com/Caligatio/jsSHA/v2.3.1/src/sha512.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.keyboard.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Kiosk CVS</title>
+    <style type="text/css">
+        #wrapper {
+            opacity: 0;
+            top: 6%;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/dist/css/keyboard.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/dist/css/style.css" type="text/css" media="all">
+</head>
+
+<body>
+    <div id="wrapper" class="steps-page">
+        <header id="header">
+            <div class="header-holder">
+                <div class="logo"><a href="#"><img src="assets/images/logo.png" alt="Site logo"></a></div>
+                <a href="index.html" class="btn-exit">Exit</a>
+            </div>
+        </header>
+        <main id="main">
+            <div class="ditto-holder" id="step2">
+                <div id="create"></div>
+                <div id="ditto"></div>
+                <div class="frontal"></div>
+                <div class="logo-transparent">
+                    <img src="assets/images/logo2.png" alt="Logo">
+                </div>
+            </div>
+            <div class="basic-info" id="step1">
+                <div class="title-area">
+                    <span class="sub-title">In just 2 minutes</span>
+                    <h1>Try your favorite frames virtually</h1>
+                </div>
+                <ol class="steps">
+                    <li class="active">
+                        <span class="num">1</span>
+                        <span class="title">Personalize</span>
+                        <p>Tell us your name to <br> personalize your experience</p>
+                    </li>
+                    <li>
+                        <span class="num">2</span>
+                        <span class="title">Scan face</span>
+                        <p>Follow the simple <br> instructions</p>
+                    </li>
+                    <li>
+                        <span class="num">3</span>
+                        <span class="title">Try any frame</span>
+                        <p>Try frames virtually <br> and compare your favorites</p>
+                    </li>
+                </ol>
+                <div class="down"><img src="assets/images/arrows.png" alt=""></div>
+                <div class="info-area">
+                    <p>Enter your first name and select a category to begin</p>
+                    <form action="">
+                        <input type="text" placeholder="First name" name="fname" autocomplete="off">
+                    </form>
+                </div>
+                <ul class="gender-area">
+                    <li data-gender="man">
+                        <a href="index.html">
+                            <img src="assets/images/man.jpg" alt="">
+                            <span class="title">Man</span>
+                        </a>
+                    </li>
+                    <li data-gender="woman">
+                        <a href="index.html">
+                            <img src="assets/images/woman.jpg" alt="">
+                            <span class="title">Woman</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer id="footer" style="display:none;">
+            <a href="#" data-back="#step1" class="btn-back">Back</a>
+            <div class="lang-sw"><a href="#">Spanish</a></div>
+        </footer>
+        <div class="popup popup-message" id="popup-exit">
+            <div class="overlay"></div>
+            <div class="popup-content">
+                <div class="content-frame">
+                    <div class="content-holder">
+                        <a href="#" class="popup-close align-right">Close</a>
+                        <div class="content-area">
+                            <h3>Are you sure you want to exit?</h3>
+                            <div class="warn txt">
+                                <p>Face scan and frame recommendation data will be lost.</p>
+                                <p>Your personal data will be erased permanently.</p>
+                            </div>
+                            <div class="btn-area">
+                                <a href="index.html" class="btn btn-primary conf-exit">Exit now</a>
+                                <a href="#" class="btn btn-secondary btn-cancel">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup-message" id="popup-field">
+            <div class="overlay"></div>
+            <div class="popup-content">
+                <div class="content-frame">
+                    <div class="content-holder">
+                        <a href="#" class="popup-close align-right">Close</a>
+                        <div class="content-area">
+                            <h3>Forgot Something?</h3>
+                            <div class="warn txt">
+                                <p>Please enter your name to continue</p>
+                            </div>
+                            <div class="btn-area">
+                                <a href="#" class="btn btn-primary btn-cancel">Ok</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://bsdk.api.ditto.com/ditto/3.6.0/en-us/api.js"> </script>
+    <link type="text/javascript" rel="prefetch" href="https://bsdk.api.ditto.com/ditto/3.6.0/en-us/vendors.js">
+    <script type="text/javascript" src="https://cdn.rawgit.com/Caligatio/jsSHA/v2.3.1/src/sha512.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.keyboard.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+
+</html>

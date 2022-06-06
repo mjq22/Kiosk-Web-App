@@ -1,0 +1,55 @@
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Kiosk CVS</title>
+    <style type="text/css">
+        #wrapper {
+            opacity: 0;
+            top: 6%;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/dist/css/style.css" type="text/css" media="all">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="header-holder">
+                <div class="logo"><a href="#"><img src="assets/images/logo.png" alt="Site logo"></a></div>
+            </div>
+        </header>
+        <main id="main">
+            <div class="title-area thanks ph">
+                <h1>Thank you</h1>
+                <span class="sub-title">We hope you enjoyed the virtual try-on experience</span>
+            </div>
+            <div class="thanks-wrap">
+                <div class="img-box">
+                    <img src="assets/images/mail.png" alt="mail.png">
+                    <h2>Your virtual try-on photos are on their way ...</h2>
+                </div>
+            </div>
+
+            <div class="reset-timer">
+                <p>System will automatically exit and erase your personal data in ... </p>
+                <div id="countdown">
+                    <div id="countdown-number"></div>
+                    <svg>
+                        <circle r="52" cx="55" cy="55"></circle>
+                    </svg>
+                </div>
+                <a href="javascript:pageUp();" class="reset">Exit or start over</a>
+            </div>
+        </main>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://bsdk.api.ditto.com/ditto/3.3.0/en-us/api.js"> </script>
+    <link type="text/javascript" rel="prefetch" href="https://bsdk.api.ditto.com/ditto/3.3.0/en-us/vendors.js">
+    <script type="text/javascript" src="https://cdn.rawgit.com/Caligatio/jsSHA/v2.3.1/src/sha512.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+
+</html>
